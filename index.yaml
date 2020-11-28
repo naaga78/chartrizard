@@ -22,6 +22,17 @@ entries:
     urls:
     - https://github.com/naaga78/chartrizard/releases/download/jackett-0.1.0/jackett-0.1.0.tgz
     version: 0.1.0
+  lidarr:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-28T01:10:51.6194143-05:00"
+    description: Lidarr - Automatic downloader for music ^^
+    digest: 45174aff4f91cc9dfb290a7fc73ced40d9151dabb5eb642a795655c1f7eda887
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/lidarr/logo/lidarr.png
+    name: lidarr
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/lidarr-0.1.0/lidarr-0.1.0.tgz
+    version: 0.1.0
   radarr:
   - apiVersion: v1
     appVersion: "1.0"
