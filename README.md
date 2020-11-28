@@ -6,8 +6,10 @@ This repository contains Helm charts for various projects
 * [Application 1](charts/app1/)
 * [Sonarr](charts/sonarr/)
 * [Radarr](charts/radarr/)
+* [Lidarr](charts/lidarr/)
 * [Jackett](charts/jackett/)
 * [Transmission](charts/transmission-openvpn/)
+
 
 ## Installing Charts from this Repository
 
@@ -27,6 +29,10 @@ Install Sonarr:
 Install Radarr:
 
     helm install radarr chartrizard/radarr --values media.radarr.values.yml --namespace media
+
+Install Lidarr:
+
+    helm install lidarr chartrizard/lidarr --values media.lidarr.values.yml --namespace media
 
 Install Jackett:
 
