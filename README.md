@@ -18,20 +18,20 @@ Add the Repository to Helm:
 
 Install Application 1:
 
-    helm install chartrizard/app1
+    helm install 'name' chartrizard/app1 
 
 Install Sonarr:
 
-    helm install chartrizard/sonarr
+    helm install 'name' chartrizard/sonarr --values media.sonarr.values.yml --namespace media
 
 Install Radarr:
 
-    helm install chartrizard/radarr
+    helm install 'name' chartrizard/radarr --values media.radarr.values.yml --namespace media
 
 Install Jackett:
 
-    helm install chartrizard/jackett
+    helm install 'name' chartrizard/jackett --values media.jackett.values.yml --namespace media
 
 Install Transmission:
 
-    helm install chartrizard/transmission-openvpn
+    helm install 'name' chartrizard/transmission-openvpn --values media.transmission-openvpn.values.yml --namespace media
