@@ -1,7 +1,7 @@
 # chartrizard
 Helm repo
 
-This repository contains [Helm](https://helm.sh) charts for various projects
+This repository contains Helm charts for various projects
 
 * [Application 1](charts/app1/)
 
@@ -9,8 +9,8 @@ This repository contains [Helm](https://helm.sh) charts for various projects
 
 Add the Repository to Helm:
 
-    helm repo add my-helm-charts https://tech.paulcz.net/my-helm-charts
+    helm repo add chartrizard https://naaga78.github.io/chartrizard/
 
 Install Application 1:
 
-    helm install my-helm-charts/app1
+    helm install chartrizard/app1
