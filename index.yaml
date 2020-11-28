@@ -11,4 +11,48 @@ entries:
     urls:
     - https://github.com/naaga78/chartrizard/releases/download/app1-0.1.0/app1-0.1.0.tgz
     version: 0.1.0
+  jackett:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-27T23:36:21.8124087-05:00"
+    description: Jackett - shut:p
+    digest: abe99ae70c880e78e2bbd1641efca2c8bc0f6b7d4c34840cdeac541f1a8d9f5b
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/transmission-openvpn/logo/jackett.png
+    name: jackett
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/jackett-0.1.0/jackett-0.1.0.tgz
+    version: 0.1.0
+  radarr:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-27T23:36:21.8979064-05:00"
+    description: Radarr - Automatic downloader for movies :)
+    digest: e11fdd0cd31475093aa63357e50a1456a296ce89741c7102e5902907c8727c36
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/radarr/logo/radarr.png
+    name: radarr
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/radarr-0.1.0/radarr-0.1.0.tgz
+    version: 0.1.0
+  sonarr:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-27T23:36:21.9924455-05:00"
+    description: Sonarr - Automatic downloader for TV shows ^^
+    digest: 72a2d985c9cc90a6baad354dacfebd2701fd0cf28fd1d9c0d03a39cd5d32e301
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/sonarr/logo/sonarr.png
+    name: sonarr
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/sonarr-0.1.0/sonarr-0.1.0.tgz
+    version: 0.1.0
+  transmission-openvpn:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-27T23:36:22.0908751-05:00"
+    description: Transmission torrent client with WebUI while connecting to OpenVPN.
+    digest: 259f8225df9882175db70bea21d312f90b9e45c8f28127ebde5fba108b44d93b
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/transmission-openvpn/logo/transmission.png
+    name: transmission-openvpn
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/transmission-openvpn-0.1.0/transmission-openvpn-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-11-27T21:46:44.4904276-05:00"
