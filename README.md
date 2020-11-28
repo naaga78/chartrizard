@@ -22,16 +22,16 @@ Install Application 1:
 
 Install Sonarr:
 
-    helm install 'name' chartrizard/sonarr --values media.sonarr.values.yml --namespace media
+    helm install sonarr chartrizard/sonarr --values media.sonarr.values.yml --namespace media
 
 Install Radarr:
 
-    helm install 'name' chartrizard/radarr --values media.radarr.values.yml --namespace media
+    helm install radarr chartrizard/radarr --values media.radarr.values.yml --namespace media
 
 Install Jackett:
 
-    helm install 'name' chartrizard/jackett --values media.jackett.values.yml --namespace media
+    helm install jackett chartrizard/jackett --values media.jackett.values.yml --namespace media
 
 Install Transmission:
 
-    helm install 'name' chartrizard/transmission-openvpn --values media.transmission-openvpn.values.yml --namespace media
+    helm install transmission chartrizard/transmission-openvpn --values media.transmission-openvpn.values.yml --namespace media
