@@ -7,8 +7,8 @@ Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS fee
 
 Personnal configuration example:
 
-   sudo mkdir -p /mnt/ssd/media/configs/sonarr/
-   sudo chmod -R 777 /mnt/ssd/media/configs/sonarr
+    sudo mkdir -p /mnt/ssd/media/configs/sonarr/
+    sudo chmod -R 777 /mnt/ssd/media/configs/sonarr
 
    sudo nano /mnt/ssd/media/configs/sonarr/config.xml
 
@@ -18,38 +18,38 @@ Personnal configuration example:
 
 Values file example:
 
-   replicaCount: 1
+    replicaCount: 1
 
-   image:
-     repository: linuxserver/sonarr
-     tag: arm32v7-latest # ARM image
-     pullPolicy: IfNotPresent
+    image:
+      repository: linuxserver/sonarr
+      tag: arm32v7-latest # ARM image
+      pullPolicy: IfNotPresent
 
-   env:
-     - name: PUID
-       value: "1000"
-     - name: PGID
-       value: "1000"
+    env:
+      - name: PUID
+        value: "1000"
+      - name: PGID
+        value: "1000"
 
-   service:
-     type: ClusterIP
-     port: 80
+    service:
+      type: ClusterIP
+      port: 80
 
-   volumes:
-     - name: media-ssd
-       persistentVolumeClaim:
-         claimName: "media-ssd" 
+    volumes:
+      - name: media-ssd
+        persistentVolumeClaim:
+          claimName: "media-ssd" 
 
-   volumeMounts:
-     - name: media-ssd
-       mountPath: "/config"
-       subPath: "configs/sonarr" 
-     - name: media-ssd
-       mountPath: "/downloads/transmission"
-       subPath: "downloads/transmission"
-     - name: media-ssd
-       mountPath: "/Films"
-       subPath: Films
+    volumeMounts:
+      - name: media-ssd
+        mountPath: "/config"
+        subPath: "configs/sonarr" 
+      - name: media-ssd
+        mountPath: "/downloads/transmission"
+        subPath: "downloads/transmission"
+      - name: media-ssd
+        mountPath: "/tv"
+        subPath: tv
 
 
 Install Sonarr:
