@@ -1,43 +1,68 @@
-# chartrizard
-Helm repo
+# Sonarr
 
-This repository contains Helm charts for various projects
-
-* [Application 1](charts/app1/)
-* [Sonarr](charts/sonarr/)
-* [Radarr](charts/radarr/)
-* [Lidarr](charts/lidarr/)
-* [Jackett](charts/jackett/)
-* [Transmission](charts/transmission-openvpn/)
+Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 
 
-## Installing Charts from this Repository
+## Install and configuration
 
-Add the Repository to Helm:
+Personnal configuration example:
 
-    helm repo add chartrizard https://naaga78.github.io/chartrizard/
-    helm repo update
+   sudo mkdir -p /mnt/ssd/media/configs/sonarr/
+   sudo chmod -R 777 /mnt/ssd/media/configs/sonarr
 
-Install Application 1:
+   sudo nano /mnt/ssd/media/configs/sonarr/config.xml
 
-    helm install 'name' chartrizard/app1 
+    <Config>
+      <UrlBase>/sonarr</UrlBase>
+    </Config>
+
+Values file example:
+
+   replicaCount: 1
+
+   image:
+     repository: linuxserver/sonarr
+     tag: arm32v7-latest # ARM image
+     pullPolicy: IfNotPresent
+
+   env:
+     - name: PUID
+       value: "1000"
+     - name: PGID
+       value: "1000"
+
+   service:
+     type: ClusterIP
+     port: 80
+
+   volumes:
+     - name: media-ssd
+       persistentVolumeClaim:
+         claimName: "media-ssd" 
+
+   volumeMounts:
+     - name: media-ssd
+       mountPath: "/config"
+       subPath: "configs/sonarr" 
+     - name: media-ssd
+       mountPath: "/downloads/transmission"
+       subPath: "downloads/transmission"
+     - name: media-ssd
+       mountPath: "/Films"
+       subPath: Films
+
 
 Install Sonarr:
 
     helm install sonarr chartrizard/sonarr --values media.sonarr.values.yml --namespace media
 
-Install Radarr:
 
-    helm install radarr chartrizard/radarr --values media.radarr.values.yml --namespace media
 
-Install Lidarr:
 
-    helm install lidarr chartrizard/lidarr --values media.lidarr.values.yml --namespace media
 
-Install Jackett:
 
-    helm install jackett chartrizard/jackett --values media.jackett.values.yml --namespace media
 
-Install Transmission:
 
-    helm install transmission chartrizard/transmission-openvpn --values media.transmission-openvpn.values.yml --namespace media
+
+
+
