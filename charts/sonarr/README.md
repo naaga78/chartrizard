@@ -10,7 +10,7 @@ Personnal configuration example:
     sudo mkdir -p /mnt/ssd/media/configs/sonarr/
     sudo chmod -R 777 /mnt/ssd/media/configs/sonarr
 
-   sudo nano /mnt/ssd/media/configs/sonarr/config.xml
+    sudo nano /mnt/ssd/media/configs/sonarr/config.xml
 
     <Config>
       <UrlBase>/sonarr</UrlBase>
