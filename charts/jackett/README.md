@@ -69,7 +69,7 @@ Values file example:
           - NET_ADMIN
       
 
-Install radarr:
+Install jackett:
 
     helm install jackett chartrizard/jackett --values media.jackett.values.yml --namespace media
 
