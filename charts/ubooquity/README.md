@@ -9,14 +9,6 @@ Personnal configuration example:
     sudo mkdir -p /mnt/ssd/media/configs/ubooquity/
     sudo chmod -R 777 /mnt/ssd/media/configs/ubooquity
 
-    sudo nano /mnt/ssd/media/configs/ubooquity/config.xml
-
-    <Config>
-	...
-      <UrlBase>/ubooquity</UrlBase>
-	...
-    </Config>
-
 Values file example:
 
     replicaCount: 1
@@ -60,7 +52,11 @@ Install ubooquity:
 
     helm install ubooquity chartrizard/ubooquity --values media.ubooquity.values.yml --namespace media
 
-
+Additionnal note:
+   to access the admin page, go to the kubernetes dashboard, look for the ubooquity service and just change the port from 2202 to 2203
+   then access the admin page by adding :
+    .../admin
+   to the url
 
 
 
