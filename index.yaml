@@ -44,17 +44,6 @@ entries:
     urls:
     - https://github.com/naaga78/chartrizard/releases/download/lidarr-0.1.0/lidarr-0.1.0.tgz
     version: 0.1.0
-  muximux:
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: "2020-11-30T01:55:54.0441454-05:00"
-    description: Muximux - HTPC portal
-    digest: 6e9efd23517431e6d227d3769e41883e8cb1d77a87621a5228da691a93424607
-    icon: https://github.com/naaga78/chartrizard/tree/main/charts/muximux/logo/muximux.png
-    name: muximux
-    urls:
-    - https://github.com/naaga78/chartrizard/releases/download/muximux-0.1.0/muximux-0.1.0.tgz
-    version: 0.1.0
   radarr:
   - apiVersion: v1
     appVersion: "1.0"
