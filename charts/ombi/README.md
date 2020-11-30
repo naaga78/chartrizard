@@ -26,6 +26,8 @@ Values file example:
         value: "1000"
       - name: "TZ"
         value: "Europe/Paris"
+      - name: "BASE_URL"
+        value: "/ombi"
 
     service:
       type: ClusterIP
