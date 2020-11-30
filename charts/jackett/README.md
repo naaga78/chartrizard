@@ -11,11 +11,9 @@ Personnal configuration example:
 
     sudo nano /mnt/ssd/media/configs/jackett/config.xml
 
-    <Config>
-	...
+    {
       "BasePathOverride": "/jackett"
-	...
-    </Config>
+    }
 
 Values file example:
 
