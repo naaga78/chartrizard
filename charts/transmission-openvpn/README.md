@@ -83,7 +83,7 @@ Values file example:
           - NET_ADMIN
       
 
-Install radarr:
+Install transmission:
 
     helm install transmission chartrizard/transmission-openvpn --values media.transmission-openvpn.values.yml --namespace media
 
