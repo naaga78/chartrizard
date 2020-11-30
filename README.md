@@ -11,6 +11,7 @@ This repository contains Helm charts for various projects
 * [Transmission](charts/transmission-openvpn/)
 * [Ubooquity](charts/ubooquity/)
 * [Emby](charts/emby/)
+* [Ombi](charts/ombi/)
 
 
 ## Installing Charts from this Repository
@@ -51,3 +52,7 @@ Install Ubooquity:
 Install Emby:
 
     helm install emby chartrizard/emby --values media.emby.values.yml --namespace media
+
+Install Ombi:
+
+    helm install ombi chartrizard/ombi --values media.ombi.values.yml --namespace media
