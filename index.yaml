@@ -66,4 +66,15 @@ entries:
     urls:
     - https://github.com/naaga78/chartrizard/releases/download/transmission-openvpn-0.1.0/transmission-openvpn-0.1.0.tgz
     version: 0.1.0
+  ubooquity:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-29T21:49:04.2949048-05:00"
+    description: ubooquity - home server for your comics and ebooks
+    digest: f3b71726eeb3fc4dc6920bc6377dd6ae03630fd8036c14d2101b1f472eb1b578
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/ubooquity/logo/ubooquity.png
+    name: ubooquity
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/ubooquity-0.1.0/ubooquity-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-11-27T21:46:44.4904276-05:00"
