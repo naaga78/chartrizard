@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "ubooquity.fullname" . }}
+  labels:
+    app: {{ template "ubooquity.name" . }}
+    chart: {{ template "ubooquity.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 2202
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "ubooquity.name" . }}
+    release: {{ .Release.Name }}
