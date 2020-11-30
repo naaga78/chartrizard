@@ -52,7 +52,7 @@ Install ubooquity:
 
     helm install ubooquity chartrizard/ubooquity --values media.ubooquity.values.yml --namespace media
 
-Additionnal note:
+## Additionnal note:
    to access the admin page, go to the kubernetes dashboard, look for the ubooquity service and just change the port from 2202 to 2203
    then access the admin page by adding :
     .../admin
