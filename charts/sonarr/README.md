@@ -38,19 +38,37 @@ Values file example:
     volumes:
       - name: media-ssd
         persistentVolumeClaim:
-          claimName: "media-ssd" 
+          claimName: "media-ssd"
+      - name: hdd-ssd
+        persistentVolumeClaim:
+          claimName: "hdd-ssd"
+      - name: hdd-ext
+        persistentVolumeClaim:
+          claimName: "hdd-ext" 
 
     volumeMounts:
       - name: media-ssd
         mountPath: "/config"
         subPath: "configs/sonarr" 
-      - name: media-ssd
+      - name: hdd-ext
         mountPath: "/downloads/transmission"
         subPath: "downloads/transmission"
-      - name: media-ssd
-        mountPath: "/tv"
-        subPath: tv
-
+      - name: hdd-ssd
+        mountPath: "/Series"
+        subPath: Series
+      - name: hdd-ssd
+        mountPath: "/Series2"
+        subPath: Series2
+      - name: hdd-ssd
+        mountPath: "/animes"
+        subPath: animes
+      - name: hdd-ssd
+        mountPath: "/documentaires"
+        subPath: documentaires
+      - name: hdd-ssd
+        mountPath: "/Mini-series"
+        subPath: Mini-series
+      
 
 Install Sonarr:
 
