@@ -11,6 +11,17 @@ entries:
     urls:
     - https://github.com/naaga78/chartrizard/releases/download/app1-0.1.0/app1-0.1.0.tgz
     version: 0.1.0
+  emby:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-30T01:11:28.8369292-05:00"
+    description: Emby Server (Media Browser)
+    digest: 5cc4f77cc1167ebc1f008c7e6de879004b04536f4abe1e5b3181e7380aa249b7
+    icon: https://bananaspliff.github.io/geek-charts/emby/logo/emby.jpg
+    name: emby
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/emby-0.1.0/emby-0.1.0.tgz
+    version: 0.1.0
   jackett:
   - apiVersion: v1
     appVersion: "1.0"
