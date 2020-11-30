@@ -13,7 +13,9 @@ Personnal configuration example:
     sudo nano /mnt/ssd/media/configs/sonarr/config.xml
 
     <Config>
+	...
       <UrlBase>/sonarr</UrlBase>
+	...
     </Config>
 
 Values file example:
