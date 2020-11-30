@@ -44,6 +44,17 @@ entries:
     urls:
     - https://github.com/naaga78/chartrizard/releases/download/lidarr-0.1.0/lidarr-0.1.0.tgz
     version: 0.1.0
+  ombi:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-30T12:42:32.7421029-05:00"
+    description: Ombi - Automatic downloader for movies
+    digest: 5240703f4872cbf3e00be7f8366b0b759951b90b7ce936314cc19cc72ba2f521
+    icon: https://github.com/naaga78/chartrizard/tree/main/charts/ombi/logo/ombi.png
+    name: ombi
+    urls:
+    - https://github.com/naaga78/chartrizard/releases/download/ombi-0.1.0/ombi-0.1.0.tgz
+    version: 0.1.0
   radarr:
   - apiVersion: v1
     appVersion: "1.0"
