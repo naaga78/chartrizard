@@ -9,6 +9,7 @@ This repository contains Helm charts for various projects
 * [Lidarr](charts/lidarr/)
 * [Jackett](charts/jackett/)
 * [Transmission](charts/transmission-openvpn/)
+* [Ubooquity](charts/ubooquity/)
 
 
 ## Installing Charts from this Repository
@@ -41,3 +42,7 @@ Install Jackett:
 Install Transmission:
 
     helm install transmission chartrizard/transmission-openvpn --values media.transmission-openvpn.values.yml --namespace media
+
+Install Ubooquity:
+
+    helm install ubooquity chartrizard/ubooquity --values media.ubooquity.values.yml --namespace media
