@@ -48,12 +48,6 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   path: /
-  hosts:
-    - transmission.bananaspliff.org
-  tls:
-   - secretName: transmission-bananaspliff-org
-     hosts:
-       - transmission.bananaspliff.org
 
 # You have 2 options to deploy your custom openvpn config:
 #

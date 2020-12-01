@@ -3,14 +3,12 @@ Helm repo
 
 This repository contains Helm charts for various projects
 
-* [Application 1](charts/app1/)
 * [Sonarr](charts/sonarr/)
 * [Radarr](charts/radarr/)
 * [Lidarr](charts/lidarr/)
 * [Jackett](charts/jackett/)
 * [Transmission](charts/transmission-openvpn/)
 * [Ubooquity](charts/ubooquity/)
-* [Emby](charts/emby/)
 * [Ombi](charts/ombi/)
 
 
@@ -21,9 +19,6 @@ Add the Repository to Helm:
     helm repo add chartrizard https://naaga78.github.io/chartrizard/
     helm repo update
 
-Install Application 1:
-
-    helm install 'name' chartrizard/app1 
 
 Install Sonarr:
 
@@ -48,10 +43,6 @@ Install Transmission:
 Install Ubooquity:
 
     helm install ubooquity chartrizard/ubooquity --values media.ubooquity.values.yml --namespace media
-
-Install Emby:
-
-    helm install emby chartrizard/emby --values media.emby.values.yml --namespace media
 
 Install Ombi:
 

@@ -24,12 +24,6 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   path: /
-  hosts:
-    - ombi.bananaspliff.org
-  tls:
-   - secretName: ombi-bananaspliff-org
-     hosts:
-       - ombi.bananaspliff.org
 
 volumes:
   - name: myvolume

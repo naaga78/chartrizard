@@ -22,12 +22,6 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   path: /
-  hosts:
-    - jackett.bananaspliff.org
-  tls:
-   - secretName: jackett-bananaspliff-org
-     hosts:
-       - jackett.bananaspliff.org
 
 volumes:
   - name: myvolume

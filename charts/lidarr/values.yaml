@@ -22,12 +22,6 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   path: /
-  hosts:
-    - sonarr.bananaspliff.org
-  tls:
-   - secretName: lidarr-bananaspliff-org
-     hosts:
-       - lidarr.bananaspliff.org
 
 volumes:
   - name: myvolume
